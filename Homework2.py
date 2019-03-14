@@ -11,7 +11,6 @@ for i in range(1, n+1):
     datapoints.append( point )
 print("Datapoints:", datapoints)
 
-
 # Calculate center of mass
 sumx = 0
 sumy = 0
@@ -20,7 +19,6 @@ for point in datapoints:
     sumy += point[1]
 center_of_mass = (sumx/n, sumy/n)
 print("Center of mass:", center_of_mass)
-
 
 # Calculate distances
 distances = []
@@ -36,10 +34,6 @@ for dist, idx in distances:
     if dist < closest_point[0]:
         closest_point = (dist, idx)
 print("Closest point is:", datapoints[closest_point[1]], "with distance:", closest_point[0])
-
-
-
-
 
 # Find furthest point
 furthest_point = distances[0]
